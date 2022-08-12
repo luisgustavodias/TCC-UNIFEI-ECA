@@ -1,0 +1,63 @@
+
+\documentclass[10pt, twocolumn]{article} %definições iniciais do documento
+\usepackage[T1]{fontenc}
+
+%------------------------------------------------
+\usepackage{mathptmx}
+\usepackage{geometry}   %pacote para configurar as margens
+\usepackage[utf8]{inputenc} % Pacote decodificação UTF8 dos caracteres, basicamente para os acentos
+\usepackage{graphicx} %para as figuras
+
+\usepackage[explicit]{titlesec}
+\usepackage{lipsum}
+
+\renewcommand{\thesection}{\Roman{section}} 
+\renewcommand{\thesubsection}{\thesection.\arabic{subsection}}
+
+
+\titleformat{\section}
+  {\normalfont}{\thesection}{12pt}{\MakeUppercase{#1}}
+\titleformat{\thesubsection}
+  {\normalfont}{\thesubsection}{10pt}{\MakeUppercase{#1}}  
+  
+  
+\geometry{a4paper, left=2cm, right=2cm, bottom=2.5cm, top=2.5cm, headsep=1cm, footskip=1.25cm}
+
+
+\begin{document}
+
+
+\twocolumn[
+\flushleft
+\begin{minipage}{3cm}
+\includegraphics{Figuras/unifei.jpg}
+\vspace{1cm}
+\end{minipage}
+\begin{minipage}{6cm}
+\begin{tabular}{cccc}
+ &  & & \large \textsc{Trabalho de Conclusão de Curso - Maio/2023}  \\ 
+ &  & & \large \textsc{Universidade Federal de Itajubá} \\
+ &  & & \large \textsc{ENGENHARIA DE CONTROLE E AUTOMAÇÃO}  
+\end{tabular}
+
+\end{minipage} 
+
+\begin{center}
+    \par Nome
+\end{center} 
+]
+
+\par \textbf{\textit{Resumo - }Este trabalho }
+\vspace{0.25cm}
+\par \textbf{Palavras-chave: Separadas, por, vírgulas.}
+
+\section{Introdução}
+\par  
+\par Por vezes, os exemplos
+poderiam ser mostrados de outras maneiras, mas o
+objetivo é tentar cobrir todas as possíveis alternativas
+contidas em um artigo técnico.
+
+\subsection{Parágrago}
+
+\end{document}
